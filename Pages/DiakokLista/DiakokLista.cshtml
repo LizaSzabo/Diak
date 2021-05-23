@@ -1,0 +1,21 @@
+﻿@page
+@model Diakok.Pages.DiakokLista.DiakokListaModel
+@{
+
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="diak.Nev" class="control-label"></label>
+        <input asp-for="diak.Nev" class="form-control" />
+        <span asp-validation-for="diak.Nev" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="diak.Evfolyam" class="control-label"></label>
+        <input asp-for="diak.Evfolyam" class="form-control" />
+        <span asp-validation-for="diak.Evfolyam" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
